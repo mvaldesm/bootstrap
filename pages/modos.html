@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+    <title>MODOS DE JUEGO - HLL.XYZ</title>
+</head>
+<body>
+   <div class="container-fluid">
+       <div class="row" style="border-style: solid;">
+           <div class="col" style="border-style: solid;" id="nopadding">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">HLL.XYZ</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="roles.html">ROLES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="vehiculos.html">VEHÍCULOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="mapas.html">MAPAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="modos.html">MODOS DE JUEGO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-2" id="publicidad">
+                <br>
+                <p class="text-center">Publicidad 1</p>
+           </div>
+           <div class="col" id="borde">
+                <br>
+                <div class="row justify-content-center">
+                   <div class="col-11">
+                        <h1 class="text-center">MODOS DE JUEGO</h1>
+                        <p class="text-center">Hay dos operaciones de combate principales en HLL: Modos de guerra y ofensivo.</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center"> 
+                   <div class="col-11">
+                        <h2 class="text-center">MODO DE GUERRA (WARFARE)</h2>
+                        <p style="text-align:justify;">Un partido estilo tira y afloja donde cada equipo lucha por el control territorial. No hay boletos, solo territorio y un cronómetro. Ganas capturando todo el territorio enemigo o manteniendo la mayoría de los sectores al final del tiempo (1 hora y 30 minutos).</p>
+                        <p style="text-align:justify;">El territorio es el objetivo principal, por lo que es importante conocer el área de operación. Cada mapa se divide en un sistema de cuadrícula de 10x6 o 6x10 (dependiendo de la orientación del mapa). Un cuadrado de cuadrícula es de 200 mx 200 m y el mapa está agrupado en 5 sectores.</p>
+                        <img src="../images/otros/punto_de_captura.jpg" class="img-fluid" width="100%" id="borde">
+                        <br><br>
+                        <p style="text-align:justify;">Al inicio de la partida, solo habrá un sector activo (puede ser capturado o recapturado) que será territorio Neutral. Una vez que el territorio neutral ha sido capturado, se volverá Amigo o Enemigo dependiendo del equipo que lo haya capturado.</p>
+                        <p style="text-align:justify;">A partir de ese momento, habrá 2 sectores activos en juego: los sectores Amigo y Enemigo adyacentes entre sí. Los otros puntos fuertes se bloquearán hasta que se capture el territorio adyacente, poniéndolos en juego.</p>
+                        <p style="text-align:justify;">Zona de límite: estar en cualquier lugar del punto fuerte (indicado por un círculo de rayas negras) y los 4 cuadrados de la cuadrícula alrededor del punto fuerte contribuirán a capturar o defender un punto.</p>
+                        <p style="text-align:justify;">Cada jugador dentro del punto fuerte proporciona tres veces la fuerza máxima.</p>
+                        <p style="text-align:justify;">El posicionamiento es clave y es importante comprender dónde debes estar. Usa tu Mapa (tecla M) para orientarte primero a los “Sectores Activos” (neutro, amigo o enemigo) y luego a los “Puntos Fuertes” en juego.</p>
+                        <p style="text-align:justify;">Presiona la tecla T para saber si estás contribuyendo activamente a capturar o a defender un punto. El progreso del límite actual se muestra en la parte superior de la pantalla:</p>
+                        <ul>
+                            <li>Capturando: más aliados que enemigos.</li>
+                            <li>Perdiendo: más enemigos que aliados.</li>
+                            <li>Disputa: igual número de aliados y enemigos.</li>
+                        </ul>
+                        <img src="../images/otros/capturando.jpg" class="img-fluid" width="100%" id="borde">
+                        <br><br>
+                        <p style="text-align:justify;">Es importante equilibrar las fuerzas entre ataque y defensa en este modo de juego tipo tira y afloja. Demasiado a la ofensiva y eres vulnerable. Demasiado en defensa y es probable que te sientas abrumado.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <h2 class="text-center">MODO OFENSIVO (OFFENSIVE)</h2>
+                        <p style="text-align:justify;">En este modo de juego, un bando ataca y el otro defiende. Los defensores ganan aguantando la duración del cronómetro (30 minutos por sector) y los atacantes ganan al capturar los 5 sectores. El modo de juego ofensivo se juega en los mismos mapas que la guerra, excepto en Omaha Beach (solo modo ofensivo).</p>
+                        <p style="text-align:justify;">Cambios respecto del modo de guerra:</p>
+                        <ul>
+                            <li>Sectores: La ubicación del punto fuerte solo será visible para el sector activo. Debes capturar un sector para ver el siguiente punto fuerte.</li>
+                            <li>Captura: solo los soldados dentro del punto fuerte cuentan para la fuerza de captura.</li>
+                            <li>Tiempo extra: La ofensiva tiene el potencial de tiempo extra. Si estás capturando activamente un sector cuando se acaba el tiempo y tienes recursos de mano de obra disponibles, el juego entrará en tiempo extra hasta que se alcance el límite o se agote la mano de obra.</li>
+                            <li>Atacar o defender, no ambos: si pierdes un sector como defensor, no puedes recuperar ese territorio. Si capturas un territorio como atacante, no necesitas defender ese territorio.</li>
+                            <li>Puntos de generación: como defensores, tendrás 3 guarniciones predeterminadas en tu cuarto sector. Estos funcionan de manera similar a las Guarniciones de HQ que tienen una reaparición de 10 segundos. También deben destruirse a mano y puedes construir otra guarnición al lado.</li>
+                            <li>Recursos: como atacantes, comenzará con 500 de cada tipo de recurso. Deberás crear nodos de recursos para generar recursos adicionales. Como defensores, comenzarás con 250 recursos.</li>
+                            <li>Artillería: solo disponible para los defensores.</li>
+                        </ul>
+                        <p style="text-align:justify;">Si bien las diferencias entre los modos de juego son sutiles, la experiencia de juego es increíblemente diferente y agradable.</p>
+                        <br>
+                    </div>
+                </div>
+
+           </div>
+                
+           <div class="col-2" id="publicidad"> 
+                <br>
+                <p class="text-center">Publicidad 2</p>
+           </div>
+       </div>
+       <div class="row">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="text-muted">HLL.XYZ - 2022</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+        </footer>
+       </div>
+       
+   </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>        
